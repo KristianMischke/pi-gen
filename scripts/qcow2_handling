@@ -247,6 +247,7 @@ function make_bootable_image() {
 
 	echo "Umount image"
 	sync
+	sleep 30
 	umount "${MOUNTROOT}/boot" || exit 1
 	umount "${MOUNTROOT}" || exit 1
 
